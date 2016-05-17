@@ -6,8 +6,8 @@ Created on Thu Jan 14 12:47:39 2016
 """
 
 #==================================================================================
-# This software will identfy if an PLGS identified sequence is impossimple
-# (H,K,R,P in position P1' or P in P2')
+# This software will identfy if an PLGS identified sequence is impossiple
+# (H,K,R,P in position P1 or P in P2)
 # The seqeunce can be loaded using a FASTA sequence or just typed in
 # The .CSV output from LARS can be used to provide the list of identified peptides
 #==================================================================================
