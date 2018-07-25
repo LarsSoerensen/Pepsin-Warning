@@ -253,6 +253,7 @@ class Application(tk.Frame):
             index = 0 #used to potentially remove any sequences that fails to meet a threshold
             for row in reader:
                 if index == 0:
+                    self.header = row
                     pass
                 else:
                     position = int(row[26])
@@ -310,6 +311,7 @@ class Application(tk.Frame):
         count = 0
         with open (filtered__location, 'w', newline = '') as csvfile:
             writer = csv.writer(csvfile)
+            writer.writerow(self.header)
             keys = self.main_dict.keys()
             for key in keys:
                 for item in self.index_pop_set:
